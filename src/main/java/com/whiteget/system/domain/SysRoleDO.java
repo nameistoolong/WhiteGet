@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * 系统权限表
+ * 系统权限表, A1高闪来一个好嘛，秋梨膏
  *
  * @author fjc
  */
