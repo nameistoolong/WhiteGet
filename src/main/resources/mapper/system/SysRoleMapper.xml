@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whiteget.system.dao.SysRoleMapper">
+
+	<select id="selectRoleByUserId" resultType="java.lang.String">
+		SELECT DISTINCT
+		  r.role_sign
+		FROM
+		  sys_role r
+		  LEFT JOIN sys_user_role sur ON r.id = sur.sys_role_id
+		  LEFT JOIN sys_user su ON sur.sys_user_id = su.id
+		<where>
+			${ew.sqlSegment}
+		</where>
+	</select>
+</mapper> 
