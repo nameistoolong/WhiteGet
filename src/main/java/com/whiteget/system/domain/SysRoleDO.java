@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * 系统权限表, goodbye
+ * 系统权限表
  *
  * @author fjc
  */
